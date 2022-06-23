@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/magiconair/properties/assert"
-	stack "github.com/nsuprun/genstack/src"
+	stack "github.com/nsuprun/genstack"
 )
 
 func TestPush(t *testing.T) {

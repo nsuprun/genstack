@@ -8,12 +8,12 @@ import (
 
 func main() {
 
-	s := "()()()(()"
+	s := "(t)es(t)()()"
 
 	if hasBalancedBrackets(s) == true {
-		fmt.Printf("String %s has balanced brackets\r\n", s)
+		fmt.Printf("Brackets in %s are balanced\r\n", s)
 	} else {
-		fmt.Printf("String %s is not balanced\r\n", s)
+		fmt.Printf("Brackets in %s are not balanced\r\n", s)
 	}
 }
 
@@ -31,8 +31,6 @@ func hasBalancedBrackets(s string) bool {
 
 			stack.Pop()
 		}
-		fmt.Println(stack)
 	}
-	fmt.Println(stack.IsEmpty())
 	return stack.IsEmpty()
 }
